@@ -27,7 +27,7 @@ namespace Polymorphism
             else
                 printer = new Laserjet();
 
-            printer.show();
+            printer.Show();
             printer.Print();
 
             Console.ReadKey();

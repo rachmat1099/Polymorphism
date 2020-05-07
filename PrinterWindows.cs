@@ -8,50 +8,16 @@ namespace Polymorphism
 {
     public class PrinterWindows
     {
-        public string ukuran { get; set; }
-        public string ketrngan { get; set; }
+        public string Name { get; set; }
 
-        public virtual void show()
+        public virtual void Show()
         {
-            Console.WriteLine("Display dimension : ");
+            Console.WriteLine("Pilih Printer");
         }
+
         public virtual void Print()
         {
-            Console.WriteLine("Printer printing ...");
+            Console.WriteLine("Pilih Printer");
         }
     }
-    public class Epson : PrinterWindows
-    {
-        public override void show()
-        {
-            Console.WriteLine("Epson Display dimension : 10*11");
-        }
-        public override void Print()
-        {
-            Console.WriteLine("Epson printer printing ...");
-        }
-    }
-    public class Canon : PrinterWindows
-    {
-        public override void show()
-        {
-            Console.WriteLine("Canon display : 9.5*12");
-        }
-        public override void Print()
-        {
-            Console.WriteLine("Canon printer printing ...");
-        }
-    }
-    public class Laserjet : PrinterWindows
-    {
-        public override void show()
-        {
-            Console.WriteLine("Laserjet display dimension : 12*12");
-        }
-        public override void Print()
-        {
-            Console.WriteLine("Laserjet printer printing ...");
-        }
-    }
-
 }
